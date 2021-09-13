@@ -10,7 +10,7 @@ public class Practice4 {
 		Boom[] p = new Boom[6];
 		
 		for (int i = 0; i < p.length; i++) {
-			p[i] = new Boom("¿Ë", 0, 0);
+			p[i] = new Boom("Â¿Ã‹", 0, 0);
 		}
 
 		for (int i = 0; i < p.length - 1; i++) {
