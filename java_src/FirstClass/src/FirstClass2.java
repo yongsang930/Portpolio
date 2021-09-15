@@ -9,14 +9,14 @@ public class FirstClass2 {
 			} else {
 				System.out.println("third");
 			}
-			Math.ronaldo();
+			Math2.ronaldo();
 		}
 	}
 }
 
-class Math {
+class Math2 {
 	
-	Math() {}
+	Math2() {}
 
 	static void ronaldo() {
 		for (int i = 0; i < 10; i++) {
@@ -25,3 +25,4 @@ class Math {
 		System.out.println();
 	}
 }
+
