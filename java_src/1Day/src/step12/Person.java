@@ -33,6 +33,6 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return "Person [tel=" + tel + ", name=" + name + ", address=" + address + "]";
+		return "tel=" + tel + ", name=" + name + ", address=" + address;
 	}
 }
