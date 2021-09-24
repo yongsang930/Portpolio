@@ -1,6 +1,6 @@
 package test;
 
-import exception.DuplicationTelException;
+import exception.DuplicateTelException;
 import exception.PersonNotFoundException;
 import service.SchoolService;
 import vo.Person;
@@ -13,7 +13,7 @@ public class TestSchoolService {
 
 		try {
 			service.addPerson(new Student("011", "이지금", "카카오", "93"));
-		} catch (DuplicationTelException de) {
+		} catch (DuplicateTelException de) {
 			System.out.println(de.getMessage());
 		}
 
@@ -22,7 +22,7 @@ public class TestSchoolService {
 		
 		try {
 			service.addPerson(new Student("011", "이지은", "카카오", "93"));
-		} catch (DuplicationTelException de) {
+		} catch (DuplicateTelException de) {
 			System.out.println(de.getMessage());
 		}
 		

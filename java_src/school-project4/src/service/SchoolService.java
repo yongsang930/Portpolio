@@ -2,7 +2,7 @@ package service;
 
 import java.util.ArrayList;
 
-import exception.DuplicationTelException;
+import exception.DuplicateTelException;
 import exception.PersonNotFoundException;
 import vo.Person;
 
@@ -10,12 +10,12 @@ public class SchoolService {
 
 	private ArrayList<Person> list = new ArrayList<Person>();
 
-	public void addPerson(Person p) throws DuplicationTelException {
+	public void addPerson(Person p) throws DuplicateTelException {
 
 		for (int i = 0; i < list.size(); i++) {
 			Person per = list.get(i);
 			if (p.getTel().equals(per.getTel())) {
-				throw new DuplicationTelException("동일한 번호 존재");
+				throw new DuplicateTelException("동일한 번호 존재");
 			}
 		}
 		list.add(p);
