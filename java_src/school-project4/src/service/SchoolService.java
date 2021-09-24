@@ -21,7 +21,7 @@ public class SchoolService {
 		list.add(p);
 	}
 
-	public void print() {
+	public void printAll() {
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
