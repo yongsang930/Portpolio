@@ -95,7 +95,7 @@ public class MemController {
 		String id = (String) session.getAttribute("id");
 		Member m = service.getMember(id);
 		if (m == null) {
-			System.out.println("id없다 새끼야");
+			System.out.println("id없음");
 		} else {
 			System.out.println("아이디 있음");
 		}
